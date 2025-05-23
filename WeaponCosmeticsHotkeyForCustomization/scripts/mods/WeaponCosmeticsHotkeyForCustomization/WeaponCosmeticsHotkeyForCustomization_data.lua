@@ -7,6 +7,11 @@ return {
 	options = {
 		widgets = {
 			{
+				setting_id      = "enable_debug_mode",
+				type            = "checkbox",
+				default_value   = false,
+			},
+			{
 				setting_id      = "open_customization_primary",
 				type            = "keybind",
 				default_value   = {},
