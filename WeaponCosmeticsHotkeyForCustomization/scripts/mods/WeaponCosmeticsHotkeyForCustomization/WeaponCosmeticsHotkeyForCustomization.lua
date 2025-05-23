@@ -6,12 +6,12 @@ local debug
 mod.open_menu_primary = function()
 	mod.open_menu("melee_weapon")
 end
-
 -- Secondary: Ranged
 mod.open_menu_secondary = function()
 	mod.open_menu("ranged_weapon")
 end
-
+-- Open Menu Helper
+--	Opens customization menu for the given weapon
 mod.open_menu = function(which_weapon)
     mod:echo(which_weapon)
 end
