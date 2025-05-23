@@ -12,22 +12,28 @@ return {
 				default_value   = false,
 			},
 			{
-				setting_id      = "open_customization_primary",
-				type            = "keybind",
-				default_value   = {},
-				keybind_global  = false,
-				keybind_trigger = "pressed",
-				keybind_type    = "function_call",
-				function_name   = "open_menu_primary",
-			},
-			{
-				setting_id      = "open_customization_secondary",
-				type            = "keybind",
-				default_value   = {},
-				keybind_global  = false,
-				keybind_trigger = "pressed",
-				keybind_type    = "function_call",
-				function_name   = "open_menu_secondary",
+				setting_id		= "customization_keybinds",
+				type 			= "group",
+				sub_widgets		= {
+					{
+						setting_id      = "open_customization_primary",
+						type            = "keybind",
+						default_value   = {},
+						keybind_global  = false,
+						keybind_trigger = "pressed",
+						keybind_type    = "function_call",
+						function_name   = "open_menu_primary",
+					},
+					{
+						setting_id      = "open_customization_secondary",
+						type            = "keybind",
+						default_value   = {},
+						keybind_global  = false,
+						keybind_trigger = "pressed",
+						keybind_type    = "function_call",
+						function_name   = "open_menu_secondary",
+					},
+				}
 			},
 		} -- widgets
 	} -- options
